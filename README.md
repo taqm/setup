@@ -23,7 +23,7 @@ source /usr/local/etc/bash_completion.d/git-prompt.sh
 source /usr/local/etc/bash_completion.d/git-completion.bash
 
 GIT_PS1_SHOWDIRTYSTATE=true
-export PS1='\n\[\e[32m\]\w \[\e[35m\]$(__git_ps1 [%s])\[\e[00m\]0m\] \n \[\e[1;37m\]→\[\e[m\] ' \n \[\e[1;37m\]→\[\e[m\] '
+export PS1='\n\[\e[32m\]\w \[\e[35m\]$(__git_ps1 [%s])\[\e[00m\] \] \n \[\e[1;37m\]→ \[\e[m\]'
 
 export LSCOLORS=gxfxcxdxbxegedabagacad
 alias ls="ls -GF"
