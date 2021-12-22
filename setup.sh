@@ -1,9 +1,6 @@
 #!/bin/bash
 
 # Homebrew install (https://brew.sh/index_ja)
-echo "Install Homebrew"
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
 brew upgrade
 
 echo "Install Application"
@@ -57,7 +54,12 @@ defaults write com.apple.finder ShowStatusBar -bool true
 defaults write com.apple.finder ShowTabView -bool true
 
 
-
 # zshの設定
+
+for f in $(ls dotfiles)
+do
+  ln -s ~/setup/dotfiles/$f ~/.$f
+done
+
 mkdir ~/.zsh
 curl -o ~/.zsh/.git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
