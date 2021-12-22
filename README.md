@@ -3,7 +3,7 @@
 ## やること
 - `setup.sh`
 - 環境設定　
-- .bashrc
+
 
 ## setup.sh
 `./setup.sh`を実行

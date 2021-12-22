@@ -17,7 +17,6 @@ fi
 alias ls=exa
 alias fd=find
 alias bat=cat
-
 alias g='cd $(ghq root)/$(ghq list | peco)'
 
 alias ll="ls -la"
@@ -33,3 +32,4 @@ git config --global alias.sw 'switch'
 git config --global alias.pH 'push origin HEAD'
 git config --global alias.co 'checkout'
 git config --global alias.rema 'rebase origin/master'
+

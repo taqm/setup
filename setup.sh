@@ -58,7 +58,7 @@ defaults write com.apple.finder ShowTabView -bool true
 
 for f in $(ls dotfiles)
 do
-  ln -s ~/setup/dotfiles/$f ~/.$f
+  ln -s $HOME/setup/dotfiles/$f $HOME/.$f
 done
 
 mkdir ~/.zsh
