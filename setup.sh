@@ -16,6 +16,8 @@ brew install peco
 brew install asdf
 brew install tree
 brew install curl
+brew install zsh
+brew install zsh-completions
 
 brew install --cask google-chrome
 brew install --cask google-japanese-ime
@@ -53,3 +55,9 @@ defaults write com.apple.finder ShowStatusBar -bool true
 
  # タブバーを表示する
 defaults write com.apple.finder ShowTabView -bool true
+
+
+
+# zshの設定
+mkdir ~/.zsh
+curl -o ~/.zsh/.git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
