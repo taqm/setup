@@ -25,7 +25,6 @@ brew install --cask alfred
 brew install --cask brave-browser
 brew install --cask '1password'
 
-
 # ネットワークディスクで、`.DS_Store` ファイルを作らない
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
@@ -62,7 +61,6 @@ done
 
 mkdir ~/.zsh
 curl -o ~/.zsh/.git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
-
 
 # git alias
 git config --global alias.sw 'switch'
