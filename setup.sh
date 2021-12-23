@@ -53,7 +53,6 @@ defaults write com.apple.finder ShowStatusBar -bool true
  # タブバーを表示する
 defaults write com.apple.finder ShowTabView -bool true
 
-
 # zshの設定
 
 for f in $(ls dotfiles)
@@ -63,3 +62,12 @@ done
 
 mkdir ~/.zsh
 curl -o ~/.zsh/.git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
+
+
+# git alias
+git config --global alias.sw 'switch'
+git config --global alias.fe 'fetch -p'
+git config --global alias.pH 'push origin HEAD'
+git config --global alias.co 'checkout'
+git config --global alias.rema '!git fe; git rebase origin/master'
+
