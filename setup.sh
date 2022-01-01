@@ -56,6 +56,10 @@ defaults write com.apple.finder ShowStatusBar -bool true
  # タブバーを表示する
 defaults write com.apple.finder ShowTabView -bool true
 
+# 拡張子表示
+defaults write NSGlobalDomain "AppleShowAllExtensions" -bool "true" && killall Finder
+
+
 # zshの設定
 
 for f in $(ls dotfiles)
