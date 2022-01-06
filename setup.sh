@@ -23,7 +23,7 @@ brew install --cask google-chrome
 brew install --cask google-japanese-ime
 brew install --cask slack
 brew install --cask goland
-brew install --cask visual-stadio-code
+brew install --cask visual-studio-code
 brew install --cask iterm2
 brew install --cask alfred
 brew install --cask brave-browser

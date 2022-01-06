@@ -1,8 +1,12 @@
 # export LANG=ja_JP.UTF-8
 
-eval "$(/usr/local/bin/brew shellenv)"
-. /usr/local/opt/asdf/libexec/asdf.sh
+if [ -e /opt/homebrew ]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+else
+  eval "$(/usr/local/bin/brew shellenv)"
+fi
 
+. $(brew --prefix)/opt/asdf/libexec/asdf.sh
 eval "$(direnv hook zsh)"
 
 export PATH=$PATH:$HOME/go/bin
